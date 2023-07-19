@@ -25,6 +25,3 @@ cell_t initalize_cell(int row, int collumn ){
 
     return new_cell;
 }
-
-
-

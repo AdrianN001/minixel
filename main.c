@@ -1,7 +1,7 @@
-#include "./minixel.h"
-#include "./input.h"
+#include "./src/minixel.h"
+#include "./src/input.h"
 
-
+#include <stdio.h>
 
 int main(int argc, char** argv){
   if (argc != 3){ 
@@ -29,6 +29,8 @@ int main(int argc, char** argv){
     char new_value[100] = {0};
     printf("What should be its value? \n(TYPE HERE)");
     scanf("%s", new_value);
+
+    
     
     handle_new_value_input(new_value, cell_to_update, &minixel_instance);
     
