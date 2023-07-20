@@ -14,7 +14,7 @@ minixel_t initalize_minixel_board(int rows, int colls){
     minixel_t instance; 
     instance.number_of_rows = rows;
     instance.number_of_colls = colls;
-    instance.board = malloc(sizeof(cell_t) * number_of_cells); 
+    instance.board = (cell_t*)malloc(sizeof(cell_t) * number_of_cells); 
     
     
     

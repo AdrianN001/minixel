@@ -20,8 +20,9 @@ cell_t* get_cell_from_input(minixel_t* instance, char* cell_name){
 
 int handle_calculation(minixel_t* instance, char* input){
 
-  eval_the_variables( instance,  input);
-  return 1;
+  variable_data_t variables = eval_the_variables( instance,  input);
+  int result = evaluate_the_arithm_ops(&variables, input);
+  return result;
 }
 
 void handle_new_value_input(char* new_value, cell_t* cell_to_change, minixel_t* instance){
